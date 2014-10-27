@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/global_bg"
+    android:orientation="vertical"
+    android:paddingTop="?android:attr/actionBarSize" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/global_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_text"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/text_quote"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:text="@string/sample_quote"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_author"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/text_author"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="@string/hint_author"
+            android:text="@string/sample_author"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_color"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.larswerkman.holocolorpicker.ColorPicker
+                android:id="@+id/picker"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1" />
+
+            <com.larswerkman.holocolorpicker.SVBar
+                android:id="@+id/svbar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:scrollbarStyle="outsideInset" />
+
+            <com.larswerkman.holocolorpicker.OpacityBar
+                android:id="@+id/opacitybar"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                 android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_set"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@color/mms_theme_color"
+            android:text="@string/button_setscreen"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

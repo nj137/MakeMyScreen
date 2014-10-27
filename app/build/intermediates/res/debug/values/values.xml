@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/Users/sharathkumar/Documents/Android/workspaces/Studio/MakeMyScreen/app/src/main/res/values/attrs.xml -->
+    <eat-comment />
+
+    <attr name="fontStyle" format="enum">
+        <enum name="regular" value="0" />
+    </attr>
+    <!-- From: file:/Users/sharathkumar/Documents/Android/workspaces/Studio/MakeMyScreen/app/src/main/res/values/colors.xml -->
+    <eat-comment />
+
+    <color name="black">#FF000000</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="crouton_alert">#FF99CC00</color>
+    <color name="crouton_error">#FFFF4444</color>
+    <color name="crouton_info">#FF33B5E5</color>
+    <color name="dark_gray">#565051</color>
+    <color name="default_progress_bar_color">#FF33B5E5</color>
+    <color name="global_bg">#EEE</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="list_footer">#232222</color>
+    <color name="list_item_title">#fff</color>
+    <color name="mms_theme_color">#CC6633</color>
+    <color name="overlay_black_15p">#26000000</color>
+    <color name="overlay_black_40p">#66000000</color>
+    <color name="red">#FF0000</color>
+    <color name="shadow">#D3D3D3</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- From: file:/Users/sharathkumar/Documents/Android/workspaces/Studio/MakeMyScreen/app/src/main/res/values/attrs.xml -->
+    <eat-comment />
+
+    <declare-styleable name="ColorBars">
+        <attr name="bar_thickness" format="dimension" />
+        <attr name="bar_length" format="dimension" />
+        <attr name="bar_pointer_radius" format="dimension" />
+        <attr name="bar_pointer_halo_radius" format="dimension" />
+        <attr name="bar_orientation_horizontal" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ColorPicker">
+        <attr name="color_wheel_radius" format="dimension" />
+        <attr name="color_wheel_thickness" format="dimension" />
+        <attr name="color_center_radius" format="dimension" />
+        <attr name="color_center_halo_radius" format="dimension" />
+        <attr name="color_pointer_radius" format="dimension" />
+        <attr name="color_pointer_halo_radius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="TypefacedTextView">
+        <attr name="fontStyle" />
+    </declare-styleable>
+    <!-- From: file:/Users/sharathkumar/Documents/Android/workspaces/Studio/MakeMyScreen/app/src/main/res/values/dimens.xml -->
+    <eat-comment />
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bar_length">240dp</dimen>
+    <dimen name="bar_pointer_halo_radius">14dp</dimen>
+    <dimen name="bar_pointer_radius">6dp</dimen>
+    <dimen name="bar_thickness">4dp</dimen>
+    <dimen name="color_center_halo_radius">60dp</dimen>
+    <dimen name="color_center_radius">54dp</dimen>
+    <dimen name="color_pointer_halo_radius">18dp</dimen>
+    <dimen name="color_pointer_radius">14dp</dimen>
+    <dimen name="color_wheel_radius">124dp</dimen>
+    <dimen name="color_wheel_thickness">8dp</dimen>
+    <dimen name="text_big">20sp</dimen>
+    <dimen name="text_large">22sp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+    <dimen name="text_micro">12sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <!-- From: file:/Users/sharathkumar/Documents/Android/workspaces/Studio/MakeMyScreen/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name">MakeMyScreen</string>
+    <string name="button_setscreen">Preview</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hint_author">Optional</string>
+    <string name="label_author">Author</string>
+    <string name="label_color">Color</string>
+    <string name="label_text">Text/Quote</string>
+    <string name="sample_author">Steve Jobs</string>
+    <string name="sample_quote">We’ve all chosen to do this with our lives. So it better be damn good. It better be worth it.</string>
+    <!-- From: file:/Users/sharathkumar/Documents/Android/workspaces/Studio/MakeMyScreen/app/src/main/res/values/styles.xml -->
+    <eat-comment />
+
+    <style name="ActionBarStyle.TitleTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_big</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/mms_theme_color</item>
+        <!-- <item name="android:indeterminateProgressStyle">@style/IndeterminateProgress</item> -->
+        <item name="android:titleTextStyle">@style/ActionBarStyle.TitleTextStyle</item>
+    </style>
+
+</resources>

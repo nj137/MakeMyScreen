@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Commonly used -->
+  <!--   <color name="global_bg">#DCE0DA</color>  -->
+  	<color name="global_bg">#EEE</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="dark_gray">#565051</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="red">#FF0000</color>
+    <color name="shadow">#D3D3D3</color>
+    <color name="default_progress_bar_color">#FF33B5E5</color>
+
+    <!-- Navbar related -->
+    <color name="overlay_black_15p">#26000000</color>
+    <color name="overlay_black_40p">#66000000</color>
+    
+    <!-- Crouton related -->
+    <color name="crouton_error">#FFFF4444</color>
+    <color name="crouton_alert">#FF99CC00</color>
+    <color name="crouton_info">#FF33B5E5</color>
+    
+        <!-- New Nav Drawer Related -->
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_footer">#232222</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    
+    <color name="mms_theme_color">#CC6633</color>
+
+</resources>

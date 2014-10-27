@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="/Users/sharathkumar/Documents/Android/workspaces/Studio/MakeMyScreen/app/src/main/assets" >
+            <file
+                name="fonts/typography-times.ttf"
+                path="/Users/sharathkumar/Documents/Android/workspaces/Studio/MakeMyScreen/app/src/main/assets/fonts/typography-times.ttf" />
+        </source>
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/sharathkumar/Documents/Android/workspaces/Studio/MakeMyScreen/app/src/debug/assets" />
+    </dataSet>
+
+</merger>

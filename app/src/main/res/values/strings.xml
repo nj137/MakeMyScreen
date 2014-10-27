@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MakeMyScreen</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="button_setscreen">Preview</string>
+    <string name="label_color">Color</string>
+    <string name="label_text">Text/Quote</string>
+	<string name="label_author">Author</string>
+    <string name="hint_author">Optional</string>
+    
+    <string name="sample_quote">We’ve all chosen to do this with our lives. So it better be damn good. It better be worth it.</string>
+    <string name="sample_author">Steve Jobs</string>
+</resources>
