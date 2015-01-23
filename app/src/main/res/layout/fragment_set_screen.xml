@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#AB8752" >
+    android:background="@color/global_bg" >
 
     <infinitec.twelve.makemyscreen.ui.widgets.TypefacedTextView
         android:id="@+id/text_quote"
@@ -18,8 +18,7 @@
         android:gravity="center"
         android:maxLines="100"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp" />
+        android:textSize="30sp"/>
 
     <infinitec.twelve.makemyscreen.ui.widgets.TypefacedTextView
         android:id="@+id/text_author"
@@ -34,17 +33,5 @@
         android:textStyle="italic"
         android:maxLines="1"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#FFFFFF"
-        android:textSize="22sp" />
-
-    <ImageButton
-        android:id="@+id/button_set_wallpaper"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@null"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_margin="10dp"
-        android:src="@drawable/action_ok" />
-
+        android:textSize="22sp"/>
 </RelativeLayout>

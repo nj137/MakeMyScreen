@@ -7,5 +7,6 @@ package infinitec.twelve.makemyscreen;
  *
  */
 public interface HostActivityInterface {
-  public void previewWallpaperCalled(int color, String quote, String author);
+  public void previewColorWallpaper(int color, String quote, String author,int textColor);
+  public void previewImageWallpaper(String filePath,String quote,String author,int textColor);
 }

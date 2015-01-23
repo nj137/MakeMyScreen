@@ -14,8 +14,8 @@
     <color name="default_progress_bar_color">#FF33B5E5</color>
 
     <!-- Navbar related -->
-    <color name="overlay_black_15p">#26000000</color>
-    <color name="overlay_black_40p">#66000000</color>
+    <color name="overlay_black_15p">#28683D6F</color>
+    <color name="overlay_black_40p">#66683D6F</color>
     
     <!-- Crouton related -->
     <color name="crouton_error">#FFFF4444</color>
@@ -31,6 +31,5 @@
     <color name="counter_text_bg">#626262</color>
     <color name="counter_text_color">#c5c4c4</color>
     
-    <color name="mms_theme_color">#CC6633</color>
 
 </resources>

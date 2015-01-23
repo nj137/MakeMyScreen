@@ -18,6 +18,8 @@ public class AppConstants {
 		public static final String QUOTE = "quote";
 		public static final String AUTHOR = "author";
 		public static final String COLOR = "color";
+		public static final String TEXTCOLOR = "text_color";
+		public  static final String FILEPATH = "filepath";
 	}
 
 	/**

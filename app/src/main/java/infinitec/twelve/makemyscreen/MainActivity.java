@@ -51,12 +51,26 @@ public class MainActivity extends Activity implements HostActivityInterface {
 	}
 
 	@Override
-	public void previewWallpaperCalled(int color, String quote, String author) {
+	public void previewColorWallpaper(int color, String quote, String author,int textColor) {
 		Fragment mSetScreenFragment = new SetScreenFragment();
 		Bundle screenBundle = new Bundle();
-		screenBundle.putString(BundleKeys.QUOTE, quote);
 		screenBundle.putInt(BundleKeys.COLOR, color);
+		screenBundle.putString(BundleKeys.QUOTE, quote);
 		screenBundle.putString(BundleKeys.AUTHOR, author);
+		screenBundle.putInt(BundleKeys.TEXTCOLOR, textColor);
+		mSetScreenFragment.setArguments(screenBundle);
+
+		loadFragment(R.id.fragmentContainer, mSetScreenFragment, FragmentTags.SET_SCREEN_FRAGMENT, true, null);
+	}
+
+	@Override
+	public void previewImageWallpaper(String filepath, String quote, String author,int textColor) {
+		Fragment mSetScreenFragment = new SetScreenFragment();
+		Bundle screenBundle = new Bundle();
+		screenBundle.putString(BundleKeys.FILEPATH,filepath);
+		screenBundle.putString(BundleKeys.QUOTE, quote);
+		screenBundle.putString(BundleKeys.AUTHOR, author);
+		screenBundle.putInt(BundleKeys.TEXTCOLOR,textColor);
 		mSetScreenFragment.setArguments(screenBundle);
 
 		loadFragment(R.id.fragmentContainer, mSetScreenFragment, FragmentTags.SET_SCREEN_FRAGMENT, true, null);

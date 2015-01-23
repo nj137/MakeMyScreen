@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/global_bg"
-    android:orientation="vertical"
-    android:paddingTop="?android:attr/actionBarSize" >
+    android:background="@color/white"
+    android:paddingTop="?android:attr/actionBarSize">
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/global_bg"
-        android:orientation="vertical" >
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout2"
+        android:orientation="vertical"
+        android:paddingBottom="5dp" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="8dp"
             android:text="@string/label_text"
@@ -26,6 +27,7 @@
             android:id="@+id/text_quote"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:inputType="textMultiLine"
@@ -37,6 +39,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="8dp"
             android:text="@string/label_author"
@@ -53,55 +56,88 @@
             android:text="@string/sample_author"
             android:textColor="@color/black"
             android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/label_color"
-            android:textColor="@color/dark_gray"
-            android:textSize="16sp" />
+    </LinearLayout>
+     <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:orientation="horizontal" >
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dip"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1"
-            android:orientation="vertical" >
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
 
-            <com.larswerkman.holocolorpicker.ColorPicker
-                android:id="@+id/picker"
+            <ImageButton
+                android:id="@+id/gallery_picker"
                 android:layout_width="wrap_content"
-                android:layout_height="0dip"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="1" />
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@null"
+                android:contentDescription="@string/pick_a_photo"
+                android:src="@drawable/image"
+                android:text="@string/choose_a_text_color" />
 
-            <com.larswerkman.holocolorpicker.SVBar
-                android:id="@+id/svbar"
+            <TextView
+                android:id="@+id/textView2"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:scrollbarStyle="outsideInset" />
-
-            <com.larswerkman.holocolorpicker.OpacityBar
-                android:id="@+id/opacitybar"
-                android:layout_marginTop="6dp"
-                android:layout_width="wrap_content"
-                 android:layout_gravity="center_horizontal"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/photo_picker"
+                android:textColor="@color/black" />
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button_set"
-            android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:layout_margin="15dp"
-            android:background="@color/mms_theme_color"
-            android:text="@string/button_setscreen"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
 
-</LinearLayout>
+            <ImageButton
+                android:id="@+id/color_picker"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@null"
+                android:contentDescription="@string/pick_a_color"
+                android:src="@drawable/paintcan"
+                android:text="@string/choose_a_text_color" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="61dp"
+                android:text="@string/color_picker"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageButton
+                android:id="@+id/text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@null"
+                android:contentDescription="@string/choose_a_text_color"
+                android:src="@drawable/brushpencil" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_color"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+   
+</RelativeLayout>
